@@ -372,7 +372,7 @@ button {
 .card {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-3x);
+    gap: var(--spacing-2x);
 }
 
 .card__title {
