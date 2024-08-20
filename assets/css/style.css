@@ -124,7 +124,7 @@
 .task__inner {
     /* background-color: var(--bg-color-grey-200); */
     border-radius: var(--border-radius-md);
-    padding: var(--spacing-8x) var(--spacing-8x) 0;
+    padding: var(--spacing-8x) 0 0;
     gap: var(--spacing-4x);
     position: relative;
 }

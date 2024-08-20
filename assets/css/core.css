@@ -474,6 +474,10 @@ button {
     margin-bottom: var(--spacing-10x);
 }
 
+.navbar-mobile__btn:focus {
+    background-color: transparent;
+}
+
 /* Footer  */
 .footer__navbar {
     gap: var(--spacing-6x);
