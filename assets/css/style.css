@@ -81,7 +81,7 @@
     background-image: url("/assets/images/bg.png");
     background-position: bottom center;
     background-size: cover;
-    padding: var(--spacing-8x);
+    padding: var(--spacing-5x);
     border-radius: var(--border-radius-md);
     gap: var(--spacing-6x);
 }
