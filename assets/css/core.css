@@ -88,7 +88,7 @@
     --primary-font: "Inter", arial, sans-serif;
 
     /* Font Text Size  */
-    --text-size-h1: 2.8rem;
+    --text-size-h1: 3rem;
     --text-size-h2: 2.4rem;
     --text-size-h3: 2.3rem;
     --text-size-h4: 1.5rem;
@@ -373,7 +373,7 @@ button {
 /* Header  */
 .header {
     width: 100%;
-    padding: var(--spacing-7x) 0;
+    padding: var(--spacing-5x) 0;
     background-color: var(--bg-color-white);
     transform: translateY(0);
     z-index: 3;
@@ -471,6 +471,7 @@ button {
 
 .navbar-mobile__btn {
     margin-top: auto;
+    margin-bottom: var(--spacing-6x);
 }
 
 /* Footer  */
