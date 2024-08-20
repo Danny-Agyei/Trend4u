@@ -206,7 +206,7 @@
 
 /* Features  */
 .features__inner {
-    gap: var(--spacing-3x);
+    gap: var(--spacing-2x);
 }
 
 .features__tag {
@@ -460,6 +460,10 @@
         padding: var(--spacing-5x);
     }
 
+    .logo {
+        width: 165px;
+    }
+
     .navbar-mobile {
         display: none;
     }
@@ -548,6 +552,7 @@
         --text-size-h1: 4.45rem;
         --text-size-h2: 4.125rem;
         --text-size-h3: 3.815rem;
+        --text-size-title: 1.6rem;
     }
 
     /* Layout container  */
@@ -593,12 +598,6 @@
 
 /* Screen larger than 1200px  */
 @media only screen and (min-width: 1440px) {
-    :root {
-        /* Typography */
-        /* --text-size-h1: 4rem;
-        --text-size-h2: 3.65rem;
-        --text-size-h3: 3.35rem; */
-    }
 
     /* Layout container  */
     .l-container {
@@ -609,6 +608,5 @@
     .hero {
         height: 80vh;
     }
-
 
 }
