@@ -88,7 +88,7 @@
     --primary-font: "Inter", arial, sans-serif;
 
     /* Font Text Size  */
-    --text-size-h1: 3.35rem;
+    --text-size-h1: 3.65rem;
     --text-size-h2: 2.2rem;
     --text-size-h3: 2rem;
     --text-size-h4: 1.5rem;
@@ -117,7 +117,7 @@
 
 html {
     font-family: var(--primary-font);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     scroll-behavior: smooth;
 }
 
@@ -471,7 +471,7 @@ button {
 
 .navbar-mobile__btn {
     margin-top: auto;
-    margin-bottom: var(--spacing-6x);
+    margin-bottom: var(--spacing-10x);
 }
 
 /* Footer  */
