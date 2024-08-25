@@ -30,49 +30,52 @@
     <header class="header">
         <div class="header__container l-container">
             <!-- Main Navbar  -->
-            <div class="navbar navbar-main l-flex-row u-space-between u-align-center">
+            < class="navbar navbar-main l-flex-row u-space-between u-align-center">
                 <a href="#hero">
                     <img src="assets/images/logo.png" alt="Trend247 home" class="logo">
                 </a>
-                <ul class="navbar__list l-flex-row">
-                    <li class="navbar__item">
-                        <a href="#features" class="navbar__link">Features</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Sellers</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="/blog" class="navbar__link">Blog</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#contact" class="navbar__link">Contacts</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="navbar__list l-flex-row">
+                        <li class="navbar__item">
+                            <a href="#features" class="navbar__link">Features</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Sellers</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="/trend4u/blog/" class="navbar__link">Blog</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#contact" class="navbar__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
                 <button class="btn btn--small btn--primary">
                     <span>Start for free</span> <img src="assets/images/arrow-white.png" alt="" class="btn__arrow">
                 </button>
-            </div>
-            <!-- Mobile Navbar  -->
-            <div class="navbar navbar-mobile l-flex-row u-space-between u-align-center">
-                <a href="#hero">
-                    <img src="assets/images/logo.png" alt="Trend247 home" class="logo">
-                </a>
-                <button class="navbar-mobile__toggler js-menu-toggler" data-type="open">
-                    <img src="assets/images/menu.png" alt="menu bar" class="navbar-mobile__open-btn">
-                </button>
-                <div class="navbar-mobile__menu l-flex-column is-hidden js-menu">
-                    <ul class="navbar-mobile__header l-flex-row u-space-between">
-                        <li>
-                            <a href="/index.html#hero">
-                                <img src="assets/images/logo.png" alt="Trend247" class="logo">
-                            </a>
-                        </li>
-                        <li>
-                            <button class="navbar-mobile__close-btn js-menu-toggler btn" data-type="close">
-                                <i class="fa-solid fa-times"></i>
-                            </button>
-                        </li>
-                    </ul>
+        </div>
+        <!-- Mobile Navbar  -->
+        <div class="navbar navbar-mobile l-flex-row u-space-between u-align-center">
+            <a href="#hero">
+                <img src="assets/images/logo.png" alt="Trend247 home" class="logo">
+            </a>
+            <button class="navbar-mobile__toggler js-menu-toggler" data-type="open">
+                <img src="assets/images/menu.png" alt="menu bar" class="navbar-mobile__open-btn">
+            </button>
+            <div class="navbar-mobile__menu l-flex-column is-hidden js-menu">
+                <ul class="navbar-mobile__header l-flex-row u-space-between">
+                    <li>
+                        <a href="/">
+                            <img src="assets/images/logo.png" alt="Trend247" class="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <button class="navbar-mobile__close-btn js-menu-toggler btn" data-type="close">
+                            <i class="fa-solid fa-times"></i>
+                        </button>
+                    </li>
+                </ul>
+                <nav>
                     <ul class="navbar__list l-flex-column">
                         <li class="navbar__item">
                             <a href="#features" class="navbar__link js-menu-toggler" data-type="close">Features</a>
@@ -81,19 +84,19 @@
                             <a href="#features" class="navbar__link js-menu-toggler" data-type="close">Sellers</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="/blog/index.html" class="navbar__link js-menu-toggler" data-type="close">Blog</a>
+                            <a href="/trend4u/blog/" class="navbar__link js-menu-toggler" data-type="close">Blog</a>
                         </li>
                         <li class="navbar__item">
                             <a href="#contact" class="navbar__link js-menu-toggler" data-type="close">Contacts</a>
                         </li>
                     </ul>
-                    <button class="btn btn--small btn--primary navbar-mobile__btn">
-                        <span>Start use Trend247</span> <img src="assets/images/arrow-white.png" alt=""
-                            class="btn__arrow">
-                    </button>
-                </div>
-                <div class="navbar-mobile__overlay is-hidden js-menu-overlay"></div>
+                </nav>
+                <button class="btn btn--small btn--primary navbar-mobile__btn">
+                    <span>Start use Trend247</span> <img src="assets/images/arrow-white.png" alt="" class="btn__arrow">
+                </button>
             </div>
+            <div class="navbar-mobile__overlay is-hidden js-menu-overlay"></div>
+        </div>
         </div>
     </header>
 
@@ -464,10 +467,12 @@
                 <div class="l-inner footer__inner">
                     <div class="footer__navbar l-grid">
                         <div class="footer__brand">
-                            <img src="assets/images/logo.png" alt="Trend247" class="logo footer__logo">
+                            <a href="/">
+                                <img src="assets/images/logo.png" alt="Trend247" class="logo footer__logo">
+                            </a>
                             <p>Storly 2024 All rights reserved</p>
                         </div>
-                        <ul class="footer__list l-flex-column">
+                        <ul role="navigation" class="footer__list l-flex-column">
                             <li class="footer__item">
                                 <a href="#features" class="footer__link">Features</a>
                             </li>
@@ -478,7 +483,7 @@
                                 <a href="#contact" class="footer__link">Contacts</a>
                             </li>
                         </ul>
-                        <ul class="footer__list l-flex-column">
+                        <ul role="navigation" class="footer__list l-flex-column">
                             <li class="footer__item">
                                 <a href="/blog" class="footer__link">
                                     Blog
