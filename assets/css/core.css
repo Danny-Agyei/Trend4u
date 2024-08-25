@@ -34,9 +34,11 @@
     --border-white: #e8ecf2;
     --border-grey: #5374a7;
     --border-grey-100: #d9d9d9;
+    --border-grey-200: #D5D7E2;
 
     /* Transition  */
     --transition-color: color 300ms ease;
+    --transition-background: background 300ms ease;
     --transition-opacity: opacity 300ms ease;
     --transition-all: all 500ms ease;
     --transition-transform-2: transform 400ms ease;
@@ -96,7 +98,7 @@
     --text-size-h4: 1.564rem;
     --text-size-title: 1.407rem;
     --text-size-p: 1.25rem;
-    --text-size-small: 0.75rem;
+    --text-size-small: 0.9rem;
     --text-size-btn: 1.25rem;
 
     /* Font Weight  */
@@ -327,14 +329,15 @@ button {
 /*-------------------------->*/
 
 .btn {
-    width: max-content;
-    background-color: transparent;
-    display: inline-flex;
-    justify-content: center;
     align-items: center;
+    background-color: transparent;
     border-radius: var(--border-radius-btn);
-    opacity: 1;
+    display: inline-flex;
+    font-size: var(--text-size-btn);
     gap: var(--spacing-3x);
+    justify-content: center;
+    opacity: 1;
+    width: max-content;
 }
 
 .btn__arrow {
@@ -342,26 +345,23 @@ button {
 }
 
 .btn:hover .btn__arrow {
-    transform: translateX(var(--spacing-2x));
+    transform: translateX(var(--spacing-1x));
 }
 
 .btn--small {
-    height: 60px;
+    height: 55px;
     padding: var(--spacing-2x) var(--spacing-7x);
-    font-size: var(--text-size-btn);
 }
 
 .btn--medium {
-    height: 60px;
+    height: 55px;
     padding: var(--spacing-2x) var(--spacing-8x);
-    font-size: var(--text-size-btn);
 }
 
 .btn--full {
-    width: 100%;
     height: 50px;
     padding: var(--spacing-2x) var(--spacing-6x);
-    font-size: var(--text-size-btn);
+    width: 100%;
 }
 
 .btn--primary {
@@ -374,6 +374,7 @@ button {
     flex-direction: column;
     gap: var(--spacing-2x);
 }
+
 
 .card__title {
     font-size: var(--text-size-h4);
@@ -399,6 +400,7 @@ button {
 
 .header--slide-down {
     position: fixed;
+    top: 0;
     animation: slideDown 500ms ease forwards;
     box-shadow: 0px -3px 20px rgba(22, 22, 22, 0.2);
 }
@@ -504,4 +506,135 @@ button {
     font-size: 1.25rem;
     font-weight: var(--font-weight-600);
     color: var(--color-text-primary);
+}
+
+/*<-------------------------> 
+        #SCREEN BREAKPOINT
+/*-------------------------->*/
+
+/* Screen larger than 575px  */
+@media only screen and (min-width: 575px) {
+
+    /* Layout container  */
+    .l-container {
+        max-width: 545px;
+    }
+
+    /* Footer  */
+    .footer__navbar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer__brand,
+    .footer__btn {
+        grid-column: span 3;
+    }
+}
+
+/* Screen larger than 768px  */
+@media only screen and (min-width: 768px) {
+    :root {
+        /* Typography */
+        --text-size-h1: 3.8rem;
+        --text-size-h2: 3rem;
+        --text-size-h3: 2.8rem;
+        --text-size-h4: 1.75rem;
+        --text-size-title: 1.45rem;
+    }
+
+    /* Reusable || Utilities classes*/
+    .u-headline-medium {
+        max-width: 620px;
+    }
+
+    /* Layout container  */
+    .l-container {
+        max-width: 700px;
+    }
+
+    /* Footer  */
+    .footer__navbar {
+        grid-template-columns: 1fr 0.5fr 0.5fr 0.3fr;
+    }
+
+    .footer__brand,
+    .footer__btn {
+        grid-column: unset;
+    }
+
+    .footer__btn {
+        width: unset;
+    }
+}
+
+/* Screen larger than 992px  */
+@media only screen and (min-width: 992px) {
+
+    /* Layout container  */
+    .l-container {
+        max-width: 940px;
+        padding: 0;
+    }
+
+    .l-inner {
+        padding: var(--spacing-16x) var(--spacing-30x);
+    }
+
+    /* Header  */
+    .header {
+        padding: var(--spacing-5x);
+    }
+
+    .logo {
+        width: 165px;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .navbar-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar__list {
+        margin: 0;
+        gap: var(--spacing-10x);
+    }
+}
+
+/* Screen larger than 1200px  */
+@media only screen and (min-width: 1200px) {
+    :root {
+        /* Typography */
+        --text-size-h1: 4.45rem;
+        --text-size-h2: 4.125rem;
+        --text-size-h3: 3.815rem;
+        --text-size-title: 1.6rem;
+    }
+
+    /* Layout container  */
+    .l-container {
+        max-width: 1140px;
+    }
+
+    /* Reusable  */
+    .u-headline-small {
+        max-width: 580px;
+    }
+
+    .u-headline-medium {
+        max-width: 830px;
+    }
+}
+
+/* Screen larger than 1200px  */
+@media only screen and (min-width: 1440px) {
+
+    /* Layout container  */
+    .l-container {
+        max-width: 1200px;
+    }
 }

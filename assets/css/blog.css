@@ -1,0 +1,103 @@
+/* Blog  */
+.display {
+    margin-top: var(--spacing-6x);
+}
+
+.display__headline {
+    max-width: 775px;
+    margin: 0 auto;
+}
+
+.blog__list {
+    gap: var(--spacing-4x);
+}
+
+.blog__post {
+    border: 1px solid var(--border-grey-200);
+    border-radius: var(--border-radius-md);
+    color: #71798B;
+    gap: var(--spacing-3x);
+    font-size: var(--text-size-p);
+    padding: var(--spacing-5x);
+}
+
+.blog__img {
+    border-radius: var(--border-radius-sm);
+    width: 100%;
+}
+
+.blog__title {
+    background: linear-gradient(101.82deg, #060f32 0.54%, #132d98 94.57%), #060f32;
+    background-clip: text;
+    color: var(--color-text-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blog__tag-list {
+    gap: var(--spacing-3x);
+}
+
+.blog__tag {
+    background-color: #EEEEF0;
+    border-radius: var(--border-radius-md);
+    font-size: var(--text-size-small);
+    font-weight: var(--font-weight-500);
+    padding: 0 var(--spacing-3x);
+}
+
+.blog__text {
+    margin: var(--spacing-1x) 0 var(--spacing-3x);
+}
+
+.blog__pag {
+    align-items: center;
+    gap: var(--spacing-3x);
+    justify-content: center;
+    margin: var(--spacing-10x) 0 0;
+}
+
+.blog__pag-btn {
+    background-color: transparent;
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-500);
+    height: 40px;
+    line-height: 0;
+    padding: var(--spacing-2x);
+    width: 40px;
+    transition: var(--transition-background);
+}
+
+.blog__pag-btn.is-active,
+.blog__pag-btn:hover {
+    background-color: #F6F7F9;
+}
+
+/*<-------------------------> 
+        #SCREEN BREAKPOINT
+/*-------------------------->*/
+
+/* Screen larger than 575px  */
+/* @media only screen and (min-width: 575px) {
+
+   
+} */
+
+/* Screen larger than 768px  */
+@media only screen and (min-width: 768px) {
+
+    .display {
+        margin-top: var(--spacing-16x);
+        margin-bottom: var(--spacing-8x);
+    }
+
+    /* Blog hero  */
+    .display__headline {
+        text-align: center;
+    }
+
+    /* Blog  Post*/
+    .blog__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
