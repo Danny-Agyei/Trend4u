@@ -6,10 +6,10 @@
     /* Text Color  */
     --color-text-gradient: linear-gradient(101.82deg,
             #060f32 0.54%,
-            #132d98 94.57%),
+            #5072ff 94.57%),
         #060f32;
     --color-text-primary: #060f32;
-    --color-text-accent: #3fb181;
+    --color-text-accent: #5072ff;
     --color-text-dark: #171e1d;
     --color-text-white: #fff;
     --color-text-grey-500: #71768b;
@@ -22,8 +22,8 @@
     /* Background Color  */
     --bg-color-white: #fff;
     --bg-color-primary: #060f32;
-    --bg-color-accent: #3fb181;
-    --bg-color-accent-light: rgb(59 203 143 / 70%);
+    --bg-color-accent: rgb(80, 114, 255);
+    --bg-color-accent-light: rgb(80 114 255 / 70%);
     --bg-color-grey-200: #f0f0f0;
     --bg-color-grey-100: #f0f0f0;
     --bg-color-grey-50: #f8f8f8;
@@ -268,12 +268,11 @@ button {
 .u-headline-big,
 .u-headline-medium,
 .u-headline-small {
+    background: linear-gradient(101.82deg, #060f32 0.54%, #5072ff 94.57%), #060f32;
+    background-clip: text;
     color: var(--color-text-primary);
-    background: linear-gradient(101.82deg, #060f32 0.54%, #132d98 94.57%), #060f32;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 
 .u-headline-big {
@@ -415,8 +414,25 @@ button {
     }
 }
 
-.logo {
+/* .logo {
     max-width: 160px;
+} */
+
+.logo {
+    background-clip: text;
+    background: linear-gradient(101.82deg, #060f32 0.54%, #5072ff 94.57%), #5072ff;
+    color: var(--color-text-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.logo__tag {
+    background: transparent;
+    background-clip: unset;
+    color: var(--color-text-accent);
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: var(--color-text-accent);
 }
 
 .navbar__list {
@@ -506,6 +522,10 @@ button {
     font-size: 1.25rem;
     font-weight: var(--font-weight-600);
     color: var(--color-text-primary);
+}
+
+.footer__logo {
+    margin-bottom: var(--spacing-1x);
 }
 
 /*<-------------------------> 

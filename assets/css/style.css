@@ -29,7 +29,7 @@
 
 /* Your Outreach  */
 .your-outreach__inner {
-    background: var(--bg-color-primary) var(--bg-color-gradient);
+    background: #081756 var(--bg-color-gradient);
     background-image: url("/assets/images/bg.png");
     background-position: bottom center;
     background-size: cover;
@@ -84,7 +84,7 @@
 
 /* Guarantee */
 .guarantee__inner {
-    background: var(--bg-color-primary) var(--bg-color-gradient);
+    background: #081756 var(--bg-color-gradient);
     background-image: url("/assets/images/bg.png");
     background-position: bottom center;
     background-size: cover;

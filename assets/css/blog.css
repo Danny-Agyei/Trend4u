@@ -12,13 +12,17 @@
     gap: var(--spacing-4x);
 }
 
-.blog__post {
+.blog__item {
     border: 1px solid var(--border-grey-200);
     border-radius: var(--border-radius-md);
     color: #71798B;
     gap: var(--spacing-3x);
     font-size: var(--text-size-p);
     padding: var(--spacing-5x);
+}
+
+.blog-item-next {
+    background-color: rgb(225 234 252 / 70%);
 }
 
 .blog__img {
@@ -41,6 +45,7 @@
 .blog__tag {
     background-color: #EEEEF0;
     border-radius: var(--border-radius-md);
+    color: var(--color-text-grey-500) !important;
     font-size: var(--text-size-small);
     font-weight: var(--font-weight-500);
     padding: 0 var(--spacing-3x);
@@ -73,6 +78,60 @@
     background-color: #F6F7F9;
 }
 
+
+.blog-post {
+    color: #71798B;
+}
+
+.blog-post__header {
+    font-weight: var(--font-weight-500);
+}
+
+.blog-post__headline {
+    margin: var(--spacing-4x) 0 var(--spacing-6x);
+}
+
+.blog-post__subheadline {
+    text-align: left;
+    max-width: 100%;
+    margin: 0;
+}
+
+.blog-post__tags {
+    gap: var(--spacing-4x);
+    justify-content: center;
+}
+
+.blog-post__body {
+    margin-top: var(--spacing-10x);
+}
+
+.blog-post__section {
+    gap: var(--spacing-4x);
+    margin-bottom: var(--spacing-10x);
+    text-align: left;
+}
+
+.why-thread__list {
+    gap: var(--spacing-4x);
+    margin-top: var(--spacing-4x);
+}
+
+.why-thread__item {
+    margin-bottom: var(--spacing-4x);
+}
+
+.why-thread__title {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-3x);
+}
+
+.up-next {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-4x);
+    font-weight: var(--font-weight-500);
+}
+
 /*<-------------------------> 
         #SCREEN BREAKPOINT
 /*-------------------------->*/
@@ -91,13 +150,32 @@
         margin-bottom: var(--spacing-8x);
     }
 
-    /* Blog hero  */
     .display__headline {
         text-align: center;
     }
 
-    /* Blog  Post*/
     .blog__list {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .blog__tag {
+        font-size: var(--text-size-p);
+    }
+
+    .blog-post__wrapper {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .blog-post__header {
+        margin-bottom: var(--spacing-16x);
+    }
+
+    .blog-post__subheadline {
+        font-size: 2.2rem;
+    }
+
+    .why-thread__title {
+        font-size: 1.65rem;
     }
 }
