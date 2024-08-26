@@ -46,7 +46,7 @@
     background-color: #EEEEF0;
     border-radius: var(--border-radius-md);
     color: var(--color-text-grey-500) !important;
-    font-size: var(--text-size-small);
+    font-size: 1.12rem;
     font-weight: var(--font-weight-500);
     padding: 0 var(--spacing-3x);
 }
@@ -136,15 +136,16 @@
         #SCREEN BREAKPOINT
 /*-------------------------->*/
 
-/* Screen larger than 575px  */
-/* @media only screen and (min-width: 575px) {
-
-   
-} */
 
 /* Screen larger than 768px  */
 @media only screen and (min-width: 768px) {
 
+    /* Layout  */
+    .l-container {
+        max-width: 720px;
+    }
+
+    /* Blog  */
     .display {
         margin-top: var(--spacing-16x);
         margin-bottom: var(--spacing-8x);
@@ -177,5 +178,15 @@
 
     .why-thread__title {
         font-size: 1.65rem;
+    }
+}
+
+
+
+/* Screen larger than 992px  */
+@media only screen and (min-width: 992px) {
+    .l-inner {
+        padding-left: var(--spacing-12x);
+        padding-right: var(--spacing-12x);
     }
 }
