@@ -138,13 +138,19 @@
 /*-------------------------->*/
 
 
-/* Screen larger than 768px  */
+/* Screen lower than 768px  */
+
 @media only screen and (min-width: 768px) {
 
     /* Layout  */
     .l-container {
         max-width: 720px;
     }
+}
+
+
+/* Screen larger than 768px  */
+@media only screen and (min-width: 768px) {
 
     /* Blog  */
     .display {
