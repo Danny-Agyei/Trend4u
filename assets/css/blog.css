@@ -140,11 +140,12 @@
 
 /* Screen lower than 768px  */
 
-@media only screen and (max-width: 768px) {
+@media (min-width:575px) and (max-width: 768px) {
 
     /* Layout  */
     .l-container {
         max-width: 720px;
+        padding: 0;
     }
 }
 
