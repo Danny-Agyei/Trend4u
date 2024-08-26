@@ -18,6 +18,7 @@
     color: #71798B;
     gap: var(--spacing-3x);
     font-size: var(--text-size-p);
+    min-width: 100%;
     padding: var(--spacing-5x);
 }
 
@@ -159,10 +160,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .blog__tag {
-        font-size: var(--text-size-p);
-    }
-
     .blog-post__wrapper {
         max-width: 650px;
         margin: 0 auto;
@@ -186,7 +183,7 @@
 /* Screen larger than 992px  */
 @media only screen and (min-width: 992px) {
     .l-inner {
-        padding-left: var(--spacing-12x);
-        padding-right: var(--spacing-12x);
+        padding-left: var(--spacing-10x);
+        padding-right: var(--spacing-10x);
     }
 }
