@@ -84,6 +84,11 @@
     color: #71798B;
 }
 
+.blog-post__img {
+    border-radius: var(--border-radius-md);
+    width: 100%;
+}
+
 .blog-post__header {
     font-weight: var(--font-weight-500);
 }
