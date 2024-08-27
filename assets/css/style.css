@@ -29,8 +29,7 @@
 
 /* Your Outreach  */
 .your-outreach__inner {
-    background: #081756 var(--bg-color-gradient);
-    background-image: url("/assets/images/bg.png");
+    background: #f4f4f4 var(--bg-color-gradient);
     background-position: bottom center;
     background-size: cover;
     border-radius: var(--border-radius-md);
@@ -57,6 +56,7 @@
 .your-outreach__img {
     width: 100%;
     height: 100%;
+    border-radius: var(--border-radius-md);
 }
 
 /* Fast Outreach  */
@@ -76,6 +76,7 @@
 
 .fast-outreach__img {
     width: 100%;
+    border-radius: var(--border-radius-md);
 }
 
 .fast-outreach__title {
@@ -84,8 +85,7 @@
 
 /* Guarantee */
 .guarantee__inner {
-    background: #081756 var(--bg-color-gradient);
-    background-image: url("/assets/images/bg.png");
+    background: #f4f4f4 var(--bg-color-gradient);
     background-position: bottom center;
     background-size: cover;
     padding: var(--spacing-6x);
@@ -177,6 +177,7 @@
 .metrics__img {
     width: 100%;
     height: 100%;
+    border-radius: var(--border-radius-md);
 }
 
 .metrics__title {

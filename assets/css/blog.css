@@ -143,7 +143,7 @@
 @media only screen and (min-width: 768px) {
 
     /* Layout  */
-    .l-container {
+    .blog-container {
         max-width: 720px;
         padding: 0;
     }
@@ -184,8 +184,29 @@
 
 /* Screen larger than 992px  */
 @media only screen and (min-width: 992px) {
+
+    /* Layout  */
+    .blog-container {
+        max-width: 860px;
+    }
+
     .l-inner {
         padding-left: var(--spacing-10x);
         padding-right: var(--spacing-10x);
+    }
+}
+
+
+
+/* Screen larger than 1200px  */
+@media only screen and (min-width: 1200px) {
+
+    /* Layout  */
+    .blog-container {
+        max-width: 900px;
+    }
+
+    .display__headline {
+        max-width: 860px;
     }
 }

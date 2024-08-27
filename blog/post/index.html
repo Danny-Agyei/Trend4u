@@ -21,19 +21,16 @@
     <!-- 
     - #Fontawesome Icons
     -->
+    <link rel="stylesheet" href="/trend4u/css/fontawesome/css/solid.css" />
     <link
       rel="stylesheet"
-      href="/trend4u/assets/css/fontawesome/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/trend4u/assets/css/fontawesome/css/fontawesome.css"
+      href="/trend4u/css/fontawesome/css/fontawesome.css"
     />
     <!-- 
     - #Stylesheet
     -->
-    <link rel="stylesheet" href="/trend4u/assets/css/core.css" />
-    <link rel="stylesheet" href="/trend4u/assets/css/blog.css" />
+    <link rel="stylesheet" href="/trend4u/css/core.css" />
+    <link rel="stylesheet" href="/trend4u/css/blog.css" />
   </head>
 
   <body>
@@ -44,7 +41,7 @@
         <div
           class="navbar navbar-main l-flex-row u-space-between u-align-center"
         >
-          <a href="#hero">
+          <a href="/trend4u">
             <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
           </a>
           <nav>
@@ -56,7 +53,7 @@
                 <a href="#" class="navbar__link">Sellers</a>
               </li>
               <li class="navbar__item">
-                <a href="/trend4u/blog/" class="navbar__link">Blog</a>
+                <a href="/blog/" class="navbar__link">Blog</a>
               </li>
               <li class="navbar__item">
                 <a href="#contact" class="navbar__link">Contacts</a>
@@ -66,7 +63,7 @@
           <button class="btn btn--small btn--primary">
             <span>Start for free</span>
             <img
-              src="/trend4u/assets/images/arrow-white.png"
+              src="/trend4u/images/arrow-white.png"
               alt=""
               class="btn__arrow"
             />
@@ -76,73 +73,75 @@
         <div
           class="navbar navbar-mobile l-flex-row u-space-between u-align-center"
         >
-          <a href="#hero">
+          <a href="/">
             <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
           </a>
           <button
             class="navbar-mobile__toggler js-menu-toggler"
             data-type="open"
+            aria-label="Open navigation menu"
           >
             <img
-              src="/trend4u/assets/images/menu.png"
+              src="/trend4u/images/menu.png"
               alt="menu bar"
               class="navbar-mobile__open-btn"
             />
           </button>
           <div class="navbar-mobile__menu l-flex-column is-hidden js-menu">
-            <ul class="navbar-mobile__header l-flex-row u-space-between">
-              <li>
+            <div class="navbar-mobile__header l-flex-row u-space-between">
+              <a href="/">
                 <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
-              </li>
-              <li>
-                <button
-                  class="navbar-mobile__close-btn js-menu-toggler btn"
+              </a>
+              <button
+                class="navbar-mobile__close-btn js-menu-toggler btn"
+                data-type="close"
+                aria-label="Close navigation menu"
+              >
+                <i
+                  role="img"
+                  class="fa-solid fa-times"
+                  aria-label="is-hidden"
+                ></i>
+              </button>
+            </div>
+            <ul class="navbar__list l-flex-column">
+              <li class="navbar__item">
+                <a
+                  href="/#features"
+                  class="navbar__link js-menu-toggler"
                   data-type="close"
+                  >Features</a
                 >
-                  <i class="fa-solid fa-times"></i>
-                </button>
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="#"
+                  class="navbar__link js-menu-toggler"
+                  data-type="close"
+                  >Sellers</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="/blog/"
+                  class="navbar__link js-menu-toggler"
+                  data-type="close"
+                  >Blog</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="/blog/#contact"
+                  class="navbar__link js-menu-toggler"
+                  data-type="close"
+                  >Contacts</a
+                >
               </li>
             </ul>
-            <nav>
-              <ul class="navbar__list l-flex-column">
-                <li class="navbar__item">
-                  <a
-                    href="#features"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Features</a
-                  >
-                </li>
-                <li class="navbar__item">
-                  <a
-                    href="#features"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Sellers</a
-                  >
-                </li>
-                <li class="navbar__item">
-                  <a
-                    href="/trend4u/blog/"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Blog</a
-                  >
-                </li>
-                <li class="navbar__item">
-                  <a
-                    href="#contact"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Contacts</a
-                  >
-                </li>
-              </ul>
-            </nav>
             <button class="btn btn--small btn--primary navbar-mobile__btn">
               <span>Start use Trend247</span>
               <img
-                src="/trend4u/assets/images/arrow-white.png"
+                src="/trend4u/images/arrow-white.png"
                 alt=""
                 class="btn__arrow"
               />
@@ -335,36 +334,36 @@
                 </a>
                 <p>Storly 2024 All rights reserved</p>
               </div>
-              <ul role="navigation" class="footer__list l-flex-column">
-                <li class="footer__item">
-                  <a href="#features" class="footer__link">Features</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Sellers</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#contact" class="footer__link">Contacts</a>
-                </li>
-              </ul>
-              <ul
-                role="navigation"
-                class="footer__list l-flex-column"
-                aria-label="social"
-              >
-                <li class="footer__item">
-                  <a href="/blog-post" class="footer__link"> Blog </a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">LinkedIn</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Instagram</a>
-                </li>
-              </ul>
+              <nav aria-label="Page navigation">
+                <ul class="footer__list l-flex-column">
+                  <li class="footer__item">
+                    <a href="#features" class="footer__link">Features</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Sellers</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav aria-label="social">
+                <ul class="footer__list l-flex-column">
+                  <li class="footer__item">
+                    <a href="/blog-post" class="footer__link"> Blog </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">LinkedIn</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Instagram</a>
+                  </li>
+                </ul>
+              </nav>
               <button class="btn btn--medium btn--primary footer__btn">
                 <span>Start use Trend247</span>
                 <img
-                  src="/trend4u/assets/images/arrow-white.png"
+                  src="/trend4u/images/arrow-white.png"
                   alt=""
                   class="btn__arrow"
                   aria-hidden="true"
@@ -376,6 +375,6 @@
       </footer>
     </main>
     <!-- Page JS Scripts  -->
-    <script type="text/javascript" src="/trend4u/assets/js/main.js"></script>
+    <script type="text/javascript" src="/trend4u/js/main.js"></script>
   </body>
 </html>

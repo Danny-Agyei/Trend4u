@@ -436,7 +436,7 @@ button {
 }
 
 .navbar__list {
-    margin-top: var(--spacing-7x);
+    margin-top: var(--spacing-10x);
     gap: var(--spacing-3x);
 }
 
@@ -497,7 +497,7 @@ button {
 .navbar-mobile__close-btn {
     font-size: 1.6rem;
     max-width: 15px;
-    margin-top: var(--spacing-3x);
+    margin-top: var(--spacing-1x);
 }
 
 .navbar-mobile__btn {

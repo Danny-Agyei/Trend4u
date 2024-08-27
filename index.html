@@ -76,75 +76,68 @@
           <button
             class="navbar-mobile__toggler js-menu-toggler"
             data-type="open"
+            aria-label="Open navigation menu"
           >
             <img
-              src="assets/images/menu.png"
+              src="/assets/images/menu.png"
               alt="menu bar"
               class="navbar-mobile__open-btn"
             />
           </button>
           <div class="navbar-mobile__menu l-flex-column is-hidden js-menu">
-            <ul class="navbar-mobile__header l-flex-row u-space-between">
-              <li>
-                <a href="/">
-                  <img
-                    src="assets/images/logo.png"
-                    alt="Trend247"
-                    class="logo"
-                  />
-                </a>
-              </li>
-              <li>
-                <button
-                  class="navbar-mobile__close-btn js-menu-toggler btn"
+            <div class="navbar-mobile__header l-flex-row u-space-between">
+              <a href="/">
+                <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
+              </a>
+              <button
+                class="navbar-mobile__close-btn js-menu-toggler btn"
+                data-type="close"
+                aria-label="Close navigation menu"
+              >
+                <i class="fa-solid fa-times" aria-hidden="true"></i>
+              </button>
+            </div>
+            <ul class="navbar__list l-flex-column">
+              <li class="navbar__item">
+                <a
+                  href="/#features"
+                  class="navbar__link js-menu-toggler"
                   data-type="close"
+                  >Features</a
                 >
-                  <i class="fa-solid fa-times"></i>
-                </button>
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="#"
+                  class="navbar__link js-menu-toggler"
+                  data-type="close"
+                  >Sellers</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="/blog/"
+                  class="navbar__link js-menu-toggler"
+                  data-type="close"
+                  >Blog</a
+                >
+              </li>
+              <li class="navbar__item">
+                <a
+                  href="/blog/#contact"
+                  class="navbar__link js-menu-toggler"
+                  data-type="close"
+                  >Contacts</a
+                >
               </li>
             </ul>
-            <nav>
-              <ul class="navbar__list l-flex-column">
-                <li class="navbar__item">
-                  <a
-                    href="#features"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Features</a
-                  >
-                </li>
-                <li class="navbar__item">
-                  <a
-                    href="#features"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Sellers</a
-                  >
-                </li>
-                <li class="navbar__item">
-                  <a
-                    href="/trend4u/blog/"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Blog</a
-                  >
-                </li>
-                <li class="navbar__item">
-                  <a
-                    href="#contact"
-                    class="navbar__link js-menu-toggler"
-                    data-type="close"
-                    >Contacts</a
-                  >
-                </li>
-              </ul>
-            </nav>
             <button class="btn btn--small btn--primary navbar-mobile__btn">
               <span>Start use Trend247</span>
               <img
-                src="assets/images/arrow-white.png"
+                src="/assets/images/arrow-white.png"
                 alt=""
                 class="btn__arrow"
+                aria-hidden="true"
               />
             </button>
           </div>
@@ -193,27 +186,27 @@
         <div class="l-container">
           <div class="l-inner">
             <div class="your-outreach__inner l-flex-column">
-              <h3 class="your-outreach__headline u-headline-small">
+              <h2 class="your-outreach__headline u-headline-small">
                 Is That a Story of Your Outreach?
-              </h3>
+              </h2>
               <ul class="your-outreach__list l-grid">
                 <li class="your-outreach__card">
                   <img
-                    src="assets/images/story-card1.png"
+                    src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGJsb2d8ZW58MHwwfDB8fHww"
                     alt="your outreach"
                     class="your-outreach__img"
                   />
                 </li>
                 <li class="your-outreach__card">
                   <img
-                    src="assets/images/story-card2.png"
+                    src="https://images.unsplash.com/photo-1477013743164-ffc3a5e556da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGNvbXBhbnl8ZW58MHwwfDB8fHww"
                     alt="your outreach"
                     class="your-outreach__img"
                   />
                 </li>
                 <li class="your-outreach__card">
                   <img
-                    src="assets/images/story-card1.png"
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGJsb2d8ZW58MHwwfDB8fHww"
                     alt="your outreach"
                     class="your-outreach__img"
                   />
@@ -240,13 +233,13 @@
             <ul class="fast-outreach__list l-grid">
               <li class="fast-outreach__item card l-flex-column">
                 <img
-                  src="assets/images/fast-filter.png"
+                  src="https://plus.unsplash.com/premium_photo-1661770132071-026114fffb61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dWklMjBkZXNpZ258ZW58MHwwfDB8fHww"
                   alt="Start with storly"
                   class="fast-outreach__img"
                 />
-                <h4 class="fast-outreach__title card__title">
+                <h3 class="fast-outreach__title card__title">
                   Start with Trend247
-                </h4>
+                </h3>
                 <p class="fast-outreach__text">
                   Enter your requirements with easy filters. Let Storly do the
                   work. Save hours of manual searching and get accurate results
@@ -255,13 +248,13 @@
               </li>
               <li class="fast-outreach__item card l-flex-column">
                 <img
-                  src="assets/images/fast-result.png"
+                  src="https://images.unsplash.com/photo-1622258418550-46a51f29f084?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHVpJTIwZGVzaWdufGVufDB8MHwwfHx8MA%3D%3D"
                   alt="Fast results"
                   class="fast-outreach__img"
                 />
-                <h4 class="fast-outreach__title card__title">
+                <h3 class="fast-outreach__title card__title">
                   Enjoy instant Results
-                </h4>
+                </h3>
                 <p class="fast-outreach__text">
                   Evaluate each website’s quality with SEO metrics and the SV
                   Score. Compare deals to ensure the best value for your money.
@@ -269,13 +262,13 @@
               </li>
               <li class="fast-outreach__item card l-flex-column">
                 <img
-                  src="assets/images/fast-order.png"
+                  src="https://plus.unsplash.com/premium_photo-1675257061662-28af51ceeaf2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHx0ZWNofGVufDB8MHwwfHx8MA%3D%3D"
                   alt="Place your order"
                   class="fast-outreach__img"
                 />
-                <h4 class="fast-outreach__title card__title">
+                <h3 class="fast-outreach__title card__title">
                   Place Your Order
-                </h4>
+                </h3>
                 <p class="fast-outreach__text">
                   Select your placements, attach your content or order from
                   Storly, and relax. After placing an order, your deal is
@@ -285,13 +278,13 @@
               </li>
               <li class="fast-outreach__item card l-flex-column">
                 <img
-                  src="assets/images/fast-guranteed.png"
+                  src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzUwfHxibG9nfGVufDB8MHwwfHx8MA%3D%3D"
                   alt="Guaranteed success"
                   class="fast-outreach__img"
                 />
-                <h4 class="fast-outreach__title card__title">
+                <h3 class="fast-outreach__title card__title">
                   Guaranteed Success
-                </h4>
+                </h3>
                 <p class="fast-outreach__text">
                   Your content gets published on time with no delays or extra
                   charges. Proceed with other deals and enjoy a 6-month
@@ -327,9 +320,9 @@
                       alt="Prompt response"
                       class="guarantee__icon"
                     />
-                    <h5 class="guarantee__title card__title--small">
+                    <h3 class="guarantee__title card__title--small">
                       Prompt Response
-                    </h5>
+                    </h3>
                   </div>
                   <p class="guarantee__text">
                     No more waiting for days. Sellers respond withinan hour. We
@@ -344,9 +337,9 @@
                       alt="Quality guarantee"
                       class="guarantee__icon"
                     />
-                    <h5 class="guarantee__title card__title--small">
+                    <h3 class="guarantee__title card__title--small">
                       Quality Guarantee
-                    </h5>
+                    </h3>
                   </div>
                   <p class="guarantee__text">
                     Get exactly what you paid for. All sellers pass a 3-level
@@ -362,9 +355,9 @@
                       alt="Fixed terms"
                       class="guarantee__icon"
                     />
-                    <h5 class="guarantee__title card__title--small">
+                    <h3 class="guarantee__title card__title--small">
                       Fixed Terms
-                    </h5>
+                    </h3>
                   </div>
                   <p class="guarantee__text">
                     Once you place an order and it’s accepted, everything is set
@@ -379,9 +372,9 @@
                       alt="Finest content"
                       class="guarantee__icon"
                     />
-                    <h5 class="guarantee__title card__title--small">
+                    <h3 class="guarantee__title card__title--small">
                       Finest Content
-                    </h5>
+                    </h3>
                   </div>
                   <p class="guarantee__text">
                     Need stellar content? Whether it’s for link building or lead
@@ -396,9 +389,9 @@
                       alt="Safety and reliability"
                       class="guarantee__icon"
                     />
-                    <h5 class="guarantee__title card__title--small">
+                    <h3 class="guarantee__title card__title--small">
                       Safety and Reliability
-                    </h5>
+                    </h3>
                   </div>
                   <p class="guarantee__text">
                     Rest easy knowing your content is in safe hands. We feature
@@ -413,9 +406,9 @@
                       alt="No-removal guarantee"
                       class="guarantee__icon"
                     />
-                    <h5 class="guarantee__title card__title--small">
+                    <h3 class="guarantee__title card__title--small">
                       No-Removal Guarantee
-                    </h5>
+                    </h3>
                   </div>
                   <p class="guarantee__text">
                     Your content stays live for at least 6 months,guaranteed. If
@@ -443,7 +436,7 @@
                 </p>
               </div>
               <img
-                src="assets/images/interface.png"
+                src="https://cdn.dribbble.com/userupload/14259747/file/original-598f958ae1efefe50de3d281191d143b.png?resize=1200x900"
                 alt="Pleasant interface"
                 class="task__img"
               />
@@ -463,13 +456,13 @@
             <div class="metrics__list l-flex-column">
               <div class="metrics__card card l-flex-column">
                 <img
-                  src="assets/images/metric1.png"
+                  src="https://plus.unsplash.com/premium_photo-1720008915560-e7e723c0bfc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQxfHx1aSUyMGRlc2lnbnxlbnwwfDB8MHx8fDA%3D"
                   alt="One metric for everything!"
                   class="metrics__img"
                 />
-                <h4 class="metrics__title card__title">
+                <h3 class="metrics__title card__title">
                   One metric<br />for everything!
-                </h4>
+                </h3>
                 <p class="metrics__text">
                   Say goodbye to metric overload. SV Score condenses all crucial
                   SEO metrics into one easy-to-understand number. Quickly see a
@@ -478,13 +471,13 @@
               </div>
               <div class="metrics__card card l-flex-column">
                 <img
-                  src="assets/images/metric2.png"
+                  src="https://images.unsplash.com/photo-1529119835860-ce3d90485424?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc3fHx1aSUyMGRlc2lnbnxlbnwwfDB8MHx8fDA%3D"
                   alt="Analyze all metrics separately"
                   class="metrics__img"
                 />
-                <h4 class="metrics__title card__title">
+                <h3 class="metrics__title card__title">
                   Analyze all metrics<br />separately
-                </h4>
+                </h3>
                 <p class="metrics__text">
                   Access every essential SEO metric in one place — DR, keywords,
                   backlinks, traffic data, and more. Make quick decisions with
@@ -513,7 +506,7 @@
                   alt="Diverse Filters"
                   class="features__icon"
                 />
-                <h4 class="features__title card__title">Diverse Filters</h4>
+                <h3 class="features__title card__title">Diverse Filters</h3>
                 <p class="features__text">
                   Access every essential SEO metric in one place— DR, keywords,
                   backlinks, traffic data, and more. Make quick decisions with
@@ -526,9 +519,9 @@
                   alt="SEO insight"
                   class="features__icon"
                 />
-                <h4 class="features__title card__title">
+                <h3 class="features__title card__title">
                   Complete SEO Insight
-                </h4>
+                </h3>
                 <p class="features__text">
                   Access every essential SEO metric in one place — DR, keywords,
                   backlinks, traffic data, and more. Make quick decisions with
@@ -541,7 +534,7 @@
                   alt="Pricing"
                   class="features__icon"
                 />
-                <h4 class="features__title card__title">Transparent Pricing</h4>
+                <h3 class="features__title card__title">Transparent Pricing</h3>
                 <p class="features__text">
                   See exactly what influences the cost. Compare and choose the
                   best options for your budget — no hidden fees, no unexpected
@@ -554,7 +547,7 @@
                   alt="Flexible Payments"
                   class="features__icon"
                 />
-                <h4 class="features__title card__title">Flexible Payments</h4>
+                <h3 class="features__title card__title">Flexible Payments</h3>
                 <p class="features__text">
                   Choose the payment method that suits you best, from PayPal to
                   cryptocurrencies. Pay your way, hassle-free.
@@ -566,9 +559,9 @@
                   alt="Content marketing"
                   class="features__icon"
                 />
-                <h4 class="features__title card__title">
+                <h3 class="features__title card__title">
                   Native Content Marketing
-                </h4>
+                </h3>
                 <p class="features__text">
                   See exactly what influences the cost. Compare and choose the
                   best options for your budget — no hidden fees, no unexpected
@@ -581,9 +574,9 @@
                   alt="Smart Quality Control"
                   class="features__icon"
                 />
-                <h4 class="features__title card__title">
+                <h3 class="features__title card__title">
                   Smart Quality Control
-                </h4>
+                </h3>
                 <p class="features__text">
                   Enjoy peace of mind with Storly's two-level quality assurance.
                   Automated order tracking keeps you updated in real-time, while
@@ -638,81 +631,87 @@
                   />
                 </button>
               </form>
-              <ul class="contact__social-handles l-flex-column">
-                <li class="contact__handle">
-                  <a
-                    href="#"
-                    class="contact__link l-flex-row u-align-center u-space-between"
-                  >
-                    <div class="l-flex-row u-align-center">
-                      <img
-                        src="assets/images/skype.png"
-                        alt="Blog"
-                        class="contact__icon"
-                      />
-                      <div>
-                        <span class="l-flex-row u-align-center"> Blog </span>
-                        <p class="contact__text">What we do</p>
+              <aside>
+                <ul
+                  role="navigation"
+                  class="contact__social-handles l-flex-column"
+                  aria-label="social"
+                >
+                  <li class="contact__handle">
+                    <a
+                      href="#"
+                      class="contact__link l-flex-row u-align-center u-space-between"
+                    >
+                      <div class="l-flex-row u-align-center">
+                        <img
+                          src="assets/images/skype.png"
+                          alt="Blog"
+                          class="contact__icon"
+                        />
+                        <div>
+                          <span class="l-flex-row u-align-center"> Blog </span>
+                          <p class="contact__text">What we do</p>
+                        </div>
                       </div>
-                    </div>
-                    <img
-                      src="assets/images/arrow-black.png"
-                      alt="arrow forward"
-                      class="contact__arrow"
-                    />
-                  </a>
-                </li>
-                <li class="contact__handle">
-                  <a
-                    href="#"
-                    class="contact__link l-flex-row u-align-center u-space-between"
-                  >
-                    <div class="l-flex-row u-align-center">
                       <img
-                        src="assets/images/linkedin.png"
-                        alt="Linkedin"
-                        class="contact__icon"
+                        src="assets/images/arrow-black.png"
+                        alt="arrow forward"
+                        class="contact__arrow"
                       />
-                      <div>
-                        <span class="l-flex-row u-align-center">
-                          LinkedIn
-                        </span>
-                        <p class="contact__text">OPen Position</p>
+                    </a>
+                  </li>
+                  <li class="contact__handle">
+                    <a
+                      href="#"
+                      class="contact__link l-flex-row u-align-center u-space-between"
+                    >
+                      <div class="l-flex-row u-align-center">
+                        <img
+                          src="assets/images/linkedin.png"
+                          alt="Linkedin"
+                          class="contact__icon"
+                        />
+                        <div>
+                          <span class="l-flex-row u-align-center">
+                            LinkedIn
+                          </span>
+                          <p class="contact__text">OPen Position</p>
+                        </div>
                       </div>
-                    </div>
-                    <img
-                      src="assets/images/arrow-black.png"
-                      alt="arrow forward"
-                      class="contact__arrow"
-                    />
-                  </a>
-                </li>
-                <li class="contact__handle">
-                  <a
-                    href="#"
-                    class="contact__link l-flex-row u-align-center u-space-between"
-                  >
-                    <div class="l-flex-row u-align-center">
                       <img
-                        src="assets/images/instagram.png"
-                        alt="instagram"
-                        class="contact__icon"
+                        src="assets/images/arrow-black.png"
+                        alt="arrow forward"
+                        class="contact__arrow"
                       />
-                      <div>
-                        <span class="l-flex-row u-align-center">
-                          Instagram
-                        </span>
-                        <p class="contact__text">Company Life</p>
+                    </a>
+                  </li>
+                  <li class="contact__handle">
+                    <a
+                      href="#"
+                      class="contact__link l-flex-row u-align-center u-space-between"
+                    >
+                      <div class="l-flex-row u-align-center">
+                        <img
+                          src="assets/images/instagram.png"
+                          alt="instagram"
+                          class="contact__icon"
+                        />
+                        <div>
+                          <span class="l-flex-row u-align-center">
+                            Instagram
+                          </span>
+                          <p class="contact__text">Company Life</p>
+                        </div>
                       </div>
-                    </div>
-                    <img
-                      src="assets/images/arrow-black.png"
-                      alt="arrow forward"
-                      class="contact__arrow"
-                    />
-                  </a>
-                </li>
-              </ul>
+                      <img
+                        src="assets/images/arrow-black.png"
+                        alt="arrow forward"
+                        class="contact__arrow"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </aside>
             </div>
           </div>
         </div>
@@ -728,36 +727,41 @@
                 </a>
                 <p>Storly 2024 All rights reserved</p>
               </div>
-              <ul role="navigation" class="footer__list l-flex-column">
-                <li class="footer__item">
-                  <a href="#features" class="footer__link">Features</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Sellers</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#contact" class="footer__link">Contacts</a>
-                </li>
-              </ul>
-              <ul role="navigation" class="footer__list l-flex-column">
-                <li class="footer__item">
-                  <a href="/blog" class="footer__link"> Blog </a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">LinkedIn</a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Instagram</a>
-                </li>
-              </ul>
-              <button class="btn btn--medium btn--primary footer__btn">
+              <nav aria-label="Page navigation">
+                <ul class="footer__list l-flex-column">
+                  <li class="footer__item">
+                    <a href="#features" class="footer__link">Features</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Sellers</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav aria-label="Social media">
+                <ul class="footer__list l-flex-column">
+                  <li class="footer__item">
+                    <a href="/trend4u/blog" class="footer__link"> Blog </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">LinkedIn</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Instagram</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#hero" class="btn btn--medium btn--primary footer__btn">
                 <span>Start use Trend247</span>
                 <img
                   src="assets/images/arrow-white.png"
                   alt=""
                   class="btn__arrow"
+                  aria-hidden="true"
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>

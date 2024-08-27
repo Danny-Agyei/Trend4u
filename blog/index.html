@@ -21,19 +21,16 @@
     <!-- 
     - #Fontawesome Icons
     -->
+    <link rel="stylesheet" href="/trend4u/css/fontawesome/css/solid.css" />
     <link
       rel="stylesheet"
-      href="/trend4u/assets/css/fontawesome/css/solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/trend4u/assets/css/fontawesome/css/fontawesome.css"
+      href="/trend4u/css/fontawesome/css/fontawesome.css"
     />
     <!-- 
     - #Stylesheet
     -->
-    <link rel="stylesheet" href="/trend4u/assets/css/core.css" />
-    <link rel="stylesheet" href="/trend4u/assets/css/blog.css" />
+    <link rel="stylesheet" href="/trend4u/css/core.css" />
+    <link rel="stylesheet" href="/trend4u/css/blog.css" />
   </head>
 
   <body>
@@ -44,7 +41,7 @@
         <div
           class="navbar navbar-main l-flex-row u-space-between u-align-center"
         >
-          <a href="/trend4u">
+          <a href="">
             <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
           </a>
           <ul class="navbar__list l-flex-row">
@@ -55,7 +52,7 @@
               <a href="#" class="navbar__link">Sellers</a>
             </li>
             <li class="navbar__item">
-              <a href="/trend4u/blog/" class="navbar__link">Blog</a>
+              <a href="/blog/" class="navbar__link">Blog</a>
             </li>
             <li class="navbar__item">
               <a href="#contact" class="navbar__link">Contacts</a>
@@ -64,7 +61,7 @@
           <button class="btn btn--small btn--primary">
             <span>Start for free</span>
             <img
-              src="/trend4u/assets/images/arrow-white.png"
+              src="/trend4u/images/arrow-white.png"
               alt=""
               class="btn__arrow"
             />
@@ -80,37 +77,35 @@
           <button
             class="navbar-mobile__toggler js-menu-toggler"
             data-type="open"
+            aria-label="Open navigation menu"
           >
             <img
-              src="/trend4u/assets/images/menu.png"
+              src="/trend4u/images/menu.png"
               alt="menu bar"
               class="navbar-mobile__open-btn"
             />
           </button>
           <div class="navbar-mobile__menu l-flex-column is-hidden js-menu">
-            <ul class="navbar-mobile__header l-flex-row u-space-between">
-              <li>
-                <a href="/trend4u/">
-                  <img
-                    src="/trend4u/assets/images/logo.png"
-                    alt="Trend247"
-                    class="logo"
-                  />
-                </a>
-              </li>
-              <li>
-                <button
-                  class="navbar-mobile__close-btn js-menu-toggler btn"
-                  data-type="close"
-                >
-                  <i class="fa-solid fa-times"></i>
-                </button>
-              </li>
-            </ul>
+            <div class="navbar-mobile__header l-flex-row u-space-between">
+              <a href="/">
+                <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
+              </a>
+              <button
+                class="navbar-mobile__close-btn js-menu-toggler btn"
+                data-type="close"
+                aria-label="Close navigation menu"
+              >
+                <i
+                  role="img"
+                  class="fa-solid fa-times"
+                  aria-label="is-hidden"
+                ></i>
+              </button>
+            </div>
             <ul class="navbar__list l-flex-column">
               <li class="navbar__item">
                 <a
-                  href="/trend4u/#features"
+                  href="/#features"
                   class="navbar__link js-menu-toggler"
                   data-type="close"
                   >Features</a
@@ -126,7 +121,7 @@
               </li>
               <li class="navbar__item">
                 <a
-                  href="/trend4u/blog/"
+                  href="/blog/"
                   class="navbar__link js-menu-toggler"
                   data-type="close"
                   >Blog</a
@@ -134,7 +129,7 @@
               </li>
               <li class="navbar__item">
                 <a
-                  href="/trend4u/blog/#contact"
+                  href="/blog/#contact"
                   class="navbar__link js-menu-toggler"
                   data-type="close"
                   >Contacts</a
@@ -144,7 +139,7 @@
             <button class="btn btn--small btn--primary navbar-mobile__btn">
               <span>Start use Trend247</span>
               <img
-                src="/trend4u/assets/images/arrow-white.png"
+                src="/trend4u/images/arrow-white.png"
                 alt=""
                 class="btn__arrow"
               />
@@ -158,7 +153,7 @@
     <main>
       <!-- Hero  -->
       <section class="display">
-        <div class="l-container">
+        <div class="l-container blog-container">
           <l class="inner">
             <h1 class="u-headline-big display__headline">
               Blog. Learn more about SEO, traffic and promotion with us!
@@ -168,7 +163,7 @@
       </section>
 
       <section class="blog">
-        <div class="l-container">
+        <div class="l-container blog-container">
           <div class="l-inner">
             <div class="blog__list l-grid">
               <article class="blog__item card">
@@ -192,7 +187,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -225,7 +220,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="btn blog__link">
+                  <a href="/blog/post" class="btn blog__link">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -257,7 +252,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -289,7 +284,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -322,7 +317,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -353,7 +348,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -386,7 +381,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -417,7 +412,7 @@
                   class="blog__footer l-flex-row u-space-between u-align-center"
                 >
                   <p class="blog__date">June 10, 2024</p>
-                  <a href="/trend4u/blog/post" class="blog__link btn">
+                  <a href="/blog/post" class="blog__link btn">
                     Read More
                     <i
                       class="fa-solid fa-arrow-right btn__arrow blog__icon"
@@ -461,7 +456,7 @@
           <div class="l-inner footer__inner">
             <div class="footer__navbar l-grid">
               <div class="footer__brand">
-                <a href="/trend4u">
+                <a href="">
                   <h1 class="logo">Trend<span class="logo__tag">247</span></h1>
                 </a>
                 <p>Storly 2024 All rights reserved</p>
@@ -491,7 +486,7 @@
               <button class="btn btn--medium btn--primary footer__btn">
                 <span>Start use Trend247</span>
                 <img
-                  src="/trend4u/assets/images/arrow-white.png"
+                  src="/trend4u/images/arrow-white.png"
                   alt=""
                   class="btn__arrow"
                 />
@@ -502,6 +497,6 @@
       </footer>
     </main>
     <!-- Page JS Scripts  -->
-    <script type="text/javascript" src="/trend4u/assets/js/main.js"></script>
+    <script type="text/javascript" src="/trend4u/js/main.js"></script>
   </body>
 </html>
