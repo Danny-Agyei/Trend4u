@@ -528,6 +528,12 @@ button {
     margin-bottom: var(--spacing-1x);
 }
 
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2x);
+}
+
 /*<-------------------------> 
         #SCREEN BREAKPOINT
 /*-------------------------->*/
